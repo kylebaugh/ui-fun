@@ -3,8 +3,9 @@ const passField = document.querySelector('#password')
 
 const allowClick = () => {
     console.log(passField.value)
-    if(passField.value.length > 9){
-        myButton.classList = 'asdf'
+    console.log(passField.value.length)
+    if(passField.value.length >= 10){
+        myButton.classList = 'ready'
     }
     else{
         myButton.classList = 'submit'
@@ -14,11 +15,11 @@ const allowClick = () => {
 
 
 const submit = () => {
-    if(passField.value.length > 9){
+    if(passField.value.length >= 10){
         alert('Submitted Successfully')
     }
 }
 
-passField.addEventListener('keypress', allowClick)
+passField.addEventListener('keydown', allowClick)
 myButton.addEventListener('mouseover', allowClick)
 myButton.addEventListener('click', submit)
