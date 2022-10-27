@@ -1,0 +1,32 @@
+#login{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+}
+
+input{
+    width: 75%;
+}
+
+section{
+    display:flex;
+    flex-direction: column;
+    width:75%;
+}
+
+.submit{
+    background-color: rgb(80, 80, 242);
+    transition: 1s;
+    align-self:flex-end
+
+}
+
+.submit:hover{
+    transform: translateX(-250%)
+
+}
+
+.asdf {
+    background-color: rgb(25, 215, 25);
+}
